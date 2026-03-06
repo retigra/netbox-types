@@ -9,21 +9,28 @@ requires-python = ">=3.10"
 description = "NetBox type stubs and modules for type checking and development"
 readme = "README.md"
 license = { text = "Apache-2.0" }
-authors = [{ name = "NetBox Community", email = "support@netboxlabs.com" }]
+authors = [
+    { name = "Retigra", email = "info@retigra.nl" },
+    { name = "Wouter de Bruijn", email = "wouter@hedium.nl" },
+]
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Framework :: Django",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Natural Language :: English",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Typing :: Typed",
 ]
-keywords = ["netbox", "network", "automation", "ipam", "dcim"]
+keywords = [
+    "netbox",
+    "types",
+    "stubs",
+    "type hints",
+    "type checking",
+    "development",
+]
 
 # Core dependencies from NetBox requirements.txt
 dependencies = [
@@ -74,10 +81,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://netboxlabs.com/products/netbox/"
-Documentation = "https://netboxlabs.com/docs/netbox/"
-Source = "https://github.com/netbox-community/netbox"
-Issues = "https://github.com/netbox-community/netbox/issues"
+Homepage = "https://github.com/retigra/netbox-types"
+Documentation = "https://github.com/retigra/netbox-types/blob/main/README.md"
+Source = "https://github.com/retigra/netbox-types"
+Issues = "https://github.com/retigra/netbox-types/issues"
 
 # Configure setuptools to find the netbox package
 [tool.setuptools]
