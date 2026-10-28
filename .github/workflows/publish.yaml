@@ -3,6 +3,7 @@ name: Build and Publish Python Image
 on:
   release:
     types: [published]
+  workflow_dispatch:
 
 permissions:
   id-token: write
