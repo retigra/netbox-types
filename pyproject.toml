@@ -109,9 +109,6 @@ include = [
     "wireless*",
 ]
 
-[tool.setuptools.package-data]
-"*" = ["py.typed"]
-
 [tool.setuptools_scm]
 # Get version from git tags
 root = "."

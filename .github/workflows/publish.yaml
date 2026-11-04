@@ -24,5 +24,11 @@ jobs:
       - name: Build package
         run: uv build
 
+      - name: Check for py.typed markers
+        run: |
+          for wheel in dist/*.whl; do
+            python3 -c 'import sys, zipfile; names = zipfile.ZipFile(sys.argv[1]).namelist(); sys.exit(0 if "netbox/py.typed" in names and "dcim/py.typed" in names else f"py.typed missing from {sys.argv[1]}")' "$wheel"
+          done
+
       - name: Publish package
         run: uv publish dist/*
